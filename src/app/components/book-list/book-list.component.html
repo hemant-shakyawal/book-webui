@@ -1,1 +1,18 @@
-<p>book-list works!</p>
+<div>
+  <h1>Book List</h1>
+
+  <div class="display-flex">
+    <div class="p-l-10">Id</div>
+    <div class="p-l-10">Title</div>
+    <div class="p-l-10">Author</div>
+  </div>
+
+  @for (book of books; track book.id) {
+  <div class="display-flex">
+    <div class="p-l-10">{{ book.id }}</div>
+    <div class="p-l-10">{{ book.title }}</div>
+    <div class="p-l-10">{{ book.author }}</div>
+  </div>
+
+  }
+</div>
